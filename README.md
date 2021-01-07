@@ -33,3 +33,4 @@ Tuesday, December 15th | Writing the denisty file | [Slides](https://docs.google
 Thursday, December 17th | Guest speaker |
 Decemeber 21-31 | No session, winter break | 
 Tuesday, January 5th | Welcome back! Review, github setup, writing the density file cont'd | [Slides](https://docs.google.com/presentation/d/1JtX0j3iFtORuXdt44fG3as_W4n3Pjx00_K76CBLD3Ao/edit?usp=sharing)
+Thursday, January 7th | Commandline practice, writing density file cont'd | [slides](https://docs.google.com/presentation/d/19jo-qo2bTwk9BWnT2LoAOGQxDFtmuXrPxPGbxn1nDyQ/edit?usp=sharing)
