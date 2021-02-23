@@ -36,3 +36,7 @@ Tuesday, January 5th | Welcome back! Review, github setup, writing the density f
 Thursday, January 7th | Commandline practice, writing density file cont'd | [slides](https://docs.google.com/presentation/d/19jo-qo2bTwk9BWnT2LoAOGQxDFtmuXrPxPGbxn1nDyQ/edit?usp=sharing)
 Thursday, January 14th | Finishing input files | [slides](https://docs.google.com/presentation/d/1MZN4pgRP76HTR0WRBOoAHdkq7bBxYm1ZrGt6BWxwDGE/edit?usp=sharing)
 Tuesday, January 19th | Geopotential height, input files | [slides](https://docs.google.com/presentation/d/112u94ZAAcwxQy0NkLi2oJyZnW1egjcs4dImiKhGQ9UU/edit?usp=sharing)
+Thursday, January 21st | Info_pr.dat, formatting issues, etc | [slides](https://docs.google.com/presentation/d/1YuJRpwo50apys9PWXxt7g62Fb3bc-7GVsnTjYeu8x34/edit?usp=sharing)
+Tuesday, January 26th | Writing to multiple files | [slides](https://docs.google.com/presentation/d/1tSkES1wjlRl-ZSn2VVYZa2KuwWIQXPMoDrTnNNM0XFU/edit?usp=sharing)
+Thursday, January 28th | |
+Tuesday, Feburary 23rd | Catching up, running a single instance of our code | [slides](https://docs.google.com/presentation/d/1L46fulKqknjWXkMFejX0ynWdB92vt3HYE_dQx3PomjI/edit?usp=sharing)
