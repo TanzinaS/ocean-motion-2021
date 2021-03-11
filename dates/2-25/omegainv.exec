@@ -1,0 +1,16 @@
+#!/bin/csh
+set dir = ./test/
+set fileinfo = $dir}info_pr.dat
+set auxdir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/aux/
+set outdir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/omega/
+set filestm = {$auxdir}/st0/11133_st0.dat
+set fileqdi = {$auxdir}/qdi/11133_qdi.gr
+set filew =   {$outdir}w/11133_ww.gr
+
+./omegainv.exe << !
+'$fileinfo' 	#>>>>>Escribe info file info.dat:
+'$fileqdi' 	#>>>>>Escribe fichero de Div Q:
+'$filestm'   	#>>>>>Escribe fichero de densidad promedio:
+'ominput.dat'  #>>>>>Escribe fichero parametros (ominput.dat):
+'$filew'	#>>>>>Escribe fichero Salida W:
+!
