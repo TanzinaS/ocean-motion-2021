@@ -1,16 +1,16 @@
 #!/bin/csh
 set dir = ./test/
-set dhdir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/Geopotential/
-set dendir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/Densityfiles/
+set dhdir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/Geopotential
+set dendir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/Densityfiles
 set auxdir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/aux/
 set outdir = /Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/omega/
 set fileinfo = {$dir}info_pr.dat
-set filedh =  {$dhdir}/geopotential11133.gr
-set filest =  {$dendir}/density11133.gr
-set filestm = $auxdir}/st0/11133_st0.dat
-set filequ =  {$outdir}/u/11133_qu.gr
-set fileqv =  {$outdir}/v/11133_qv.gr
-set fileqdi = {$auxdir}/qdi/11133_qdi.gr
+set filedh =  {$dhdir}/geopotential930203.txt
+set filest =  {$dendir}/density930203.txt
+set filestm = {$auxdir}/st0/930203_st0.dat
+set filequ =  {$outdir}/u/930203_qu.txt
+set fileqv =  {$outdir}/v/930203_qv.txt
+set fileqdi = {$auxdir}/qdi/930203_qdi.txt
 
 ./vectorq.exe << !
 '$fileinfo'	#>>>>>Escribe info file info.dat:

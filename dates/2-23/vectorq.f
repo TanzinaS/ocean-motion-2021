@@ -22,13 +22,13 @@ C     the 3D forcing term  2*Div(Q)  is computed and written in the
 C     standard 3D format (*QDI.gr).
 C
 C     ==================================================================
-      PARAMETER(NLMAX=300,NFMAX=300,NCMAX=300)
+      PARAMETER(NLMAX=100,NFMAX=100,NCMAX=100)
       DIMENSION ST(NLMAX,NFMAX,NCMAX),DH(NLMAX,NFMAX,NCMAX),R0(NLMAX)
       DIMENSION V(9),QU(NLMAX,NFMAX,NCMAX),QV(NLMAX,NFMAX,NCMAX),
      .QDI(NLMAX,NFMAX,NCMAX)
       CHARACTER*3,NA
-	CHARACTER*300 filedat,filedh,filest,filequ,fileqv,fileqdi
-	CHARACTER*300 filestm
+	CHARACTER*90 filedat,filedh,filest,filequ,fileqv,fileqdi
+	CHARACTER*90 filestm
 	CHARACTER*1 ans
       PI=3.14159
       RD=PI/180.
