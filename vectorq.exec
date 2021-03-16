@@ -1,0 +1,24 @@
+#!/bin/csh
+
+
+set dir = ./test/
+set dhdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/dh/
+set dendir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/density/
+set auxdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/aux/
+set outdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/omega/
+set fileinfo = {$dir}info_pr.dat
+set filedh =  {$dhdir}/nw_dh_20061115.gr
+set filest =  {$dendir}/nw_density_20061115.gr
+set filestm = {$auxdir}/st0/nw_20061115_st0.dat
+set filequ =  {$outdir}/u/nw_20061115_qu.gr
+set fileqv =  {$outdir}/v/nw_20061115_qv.gr
+set fileqdi = {$auxdir}/qdi/nw_20061115_qdi.gr
+
+./vectorq.exe << !
+'$fileinfo'	#>>>>>Escribe info file info.dat:
+'$filedh'	#>>>>>Escribe fichero de altura Dinamica:
+'$filest'	#>>>>>Escribe fichero de densidad:
+'$filestm'	#>>>>>Escribe fichero de densidad promedio:
+'$filequ'	#>>>>>Escribe fichero Qu:
+'$fileqv'	#>>>>>Escribe fichero Qv:
+'$fileqdi'	#>>>>>Escribe fichero Qdi:

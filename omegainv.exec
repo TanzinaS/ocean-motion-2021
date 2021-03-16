@@ -1,0 +1,17 @@
+#!/bin/csh
+
+
+set dir = ./test/
+set fileinfo = {$dir}info_pr.dat
+set outdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/omega/
+set auxdir = /Users/helenfellow/Documents/cnn_paper/data/atlantic-data/aux/
+set filestm = {$auxdir}/st0/nw_20061115_st0.dat
+set fileqdi = {$auxdir}/qdi/nw_20061115_qdi.gr
+set filew =  {$outdir}w/nw_20061115_ww.gr
+
+./omegainv.exe << !
+'$fileinfo' 	#>>>>>Escribe info file info.dat:
+'$fileqdi' 	#>>>>>Escribe fichero de Div Q:
+'$filestm'   	#>>>>>Escribe fichero de densidad promedio:
+'ominput.dat'  #>>>>>Escribe fichero parametros (ominput.dat):
+'$filew'	#>>>>>Escribe fichero Salida W:
