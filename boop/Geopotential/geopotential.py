@@ -7,18 +7,19 @@ from datetime import timedelta
 import seawater as sw
 import datetime as td
 
-data = Dataset("/Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/intern-data-t0.nc")
-
+data = Dataset("/Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/intern-data-t5.nc")
+time = data.variables["time"]
 geo = data.variables["zo"][:]
 
-for dateIndex in range(0,216):
+start_date = td.date(1950,1,1)
+for dateIndex in range(time.shape[0]):
 	z1 = geo[dateIndex,:,:,:]
 
-	start_date = td.date(1993,1,6)
-	weeks_from_start = td.timedelta(weeks =dateIndex)
-	date = start_date+weeks_from_start
-	filename = date.strftime("%y") + date.strftime("%m") + date.strftime("%d")
 
+	hours_from_start = td.timedelta(hours =int(time[dateIndex]))
+	date = start_date+hours_from_start
+	filename = date.strftime("%y") + date.strftime("%m") + date.strftime("%d")
+	print(filename)
 
 	geopotential_file = open("/Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/boop/Geopotential/"+"geopotential"+ str(filename)+".txt", "w")
 	geopotential_file.write("1"+"\n"+"155"+ "\t"+"122"+"\n")
