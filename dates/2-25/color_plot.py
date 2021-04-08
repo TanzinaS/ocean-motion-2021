@@ -5,7 +5,7 @@ from netCDF4 import Dataset
 from matplotlib import cm
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 
-w_file = '/Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/2-25/test/ss1a2ww.gr' # open file (fortan code)
+w_file = '/Users/brownscholar/Desktop/AMNH2021Internship/ocean-motion-2021/dates/2-25/test/ss1a2ww.gr' # open file (fortan code)
 
 w = open(w_file, "r")
 
